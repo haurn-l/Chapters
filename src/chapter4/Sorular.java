@@ -4,36 +4,19 @@ package chapter4;
 import java.util.Scanner;
 
 public class Sorular {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Mevsimini merak ettiginiz ay numarasini giriniz : ");
-        int ayNo = sc.nextInt();
-        switch (ayNo){
-            case 12:
-            case 1:
-            case 2:
-                System.out.println("Kış ayi");
-                    break;
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Ilkbahar");
-                break;
-            case 6:
-            case 7:
-            case 8:
-                System.out.println("Yaz");
-                break;
-            case 9:
-            case 10:
-            case 11:
-                System.out.println("Sonbahar");
-                break;
-            default:
-                System.out.println("Gecersiz ay numarasi girisi!!");
-                break;
-        }
+
+
     }
+    static void besgeninAlani(){
+        System.out.print("Enter the length from the center to a vertex: ");
+        double r = sc.nextDouble();
+        double s = 2 * r * Math.sin(Math.PI / 5);
+        double area = (5 * s * s) / (4 * Math.tan(Math.PI / 5));
+        System.out.printf("The area of the pentagon is %.2f\n", area);
+    }
+
     static void asciiKodlariVeKarakterler() {
         // Karakterlerin ASCII değerleri
         System.out.println("'1' ASCII = " + (int)'1');
